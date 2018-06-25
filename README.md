@@ -39,6 +39,9 @@ it helps you to have a standard for you editor configuration to everyone who is 
 - Jam;
 - Volo.
 
-the package.json is a copy from => http://bit.ly/jsdevpackagejson
+The package.json is a copy from => http://bit.ly/jsdevpackagejson
+After this, just use npm install to get all the necessary packages to this project.
 
-after this, just use npm install to get all the necessary packages to this project.
+## Security Scanning
+- retire.js
+- Node Security Platform
