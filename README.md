@@ -154,3 +154,35 @@ app.listen(port, function(err) {
     - Directly use npm packages
     - Call separate Node scripts
     - Convention-based pre/post hooks
+
+## Popular Transpilers
+- Babel
+- Typescript
+
+### Babel configuration Styles
+- .babelrc || package.json
+
+### Babel Transpiler
+-create a .babelrc file
+'''
+{
+    "presets": [
+        "latest"
+    ]
+}
+'''
+
+### Use ES6 modules transpiled by Babel
+
+# Bundlers
+- Require JS
+  - first popular bundler
+- Browserify
+  - The first bundler to reach mass adoption
+- Webpack
+  - Bundles more than just JS
+- Rollup
+  - Tree shaking
+    - eliminates code that you are not using
+    - start-up faster
+    - no hot reloading and code splitting yet
