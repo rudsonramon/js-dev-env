@@ -90,7 +90,7 @@ After this, just use npm install to get all the necessary packages to this proje
 - 2) create src/index.html
 
 ### srcServer.js
-"""
+'''
 var express = require('express');
 var path = require('path');
 var open = require('open');
@@ -109,7 +109,7 @@ app.listen(port, function(err) {
         open('http://localhost:' + port);
     }
 })
-"""
+'''
 
 # Sharing work-in-progress (available players)
 - localtunnel;
@@ -186,3 +186,35 @@ app.listen(port, function(err) {
     - eliminates code that you are not using
     - start-up faster
     - no hot reloading and code splitting yet
+
+# Source map
+Very good way to debbug your code. Just try it.
+
+# Linting
+- ESLint
+- JSHint
+- JSLint
+## Configuring ESLint
+- Config. format;
+- Wich built-in rules?;
+- Warnings or erros?.
+- Which plugins?;
+- Use preset instead?.
+- Use watch to evaluate your script every time you hit save.
+
+# Testing and Continuous Integration
+## Unit test decision
+ - Framework
+ - Assertion Library
+ - Helper Libraries
+ - Where to run tests
+ - Where to place tests
+ - When to run tests
+
+## Top 6 Testing Framework
+ - Mocha
+ - Jasmine
+ - Tape
+ - QUnit
+ - AVA
+ - Jest

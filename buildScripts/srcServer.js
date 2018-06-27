@@ -14,7 +14,7 @@ app.use(require('webpack-dev-middleware')(compiler, {
 }));
 
 app.get('/', function(req, res) {
-    res.sendFile(join(__dirname, '../src/index.html'))
+    res.sendFile(join(__dirname, '../src/index.html'));
 });
 
 app.listen(port, function(err) {
@@ -23,4 +23,4 @@ app.listen(port, function(err) {
     } else {
         open('http://localhost:' + port);
     }
-})
+});
