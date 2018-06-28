@@ -205,11 +205,17 @@ Very good way to debbug your code. Just try it.
 # Testing and Continuous Integration
 ## Unit test decision
  - Framework
+  - Mocha
  - Assertion Library
+  - Chai
  - Helper Libraries
+  - JSDOM
  - Where to run tests
+  - Node
  - Where to place tests
+  - Alongside
  - When to run tests
+  - Upon Save
 
 ## Top 6 Testing Framework
  - Mocha
@@ -218,3 +224,28 @@ Very good way to debbug your code. Just try it.
  - QUnit
  - AVA
  - Jest
+### Assertion Library
+ - Chai
+ - Should.js
+ - Npm expect
+### Helper information
+ - JSDOM
+ - Cheerio
+### Where to Run Tests
+ - Browser
+  - Karma, Testem
+ - Headless Browser
+  - PhantomJS
+ - In-memory DOM
+  - JSDOM
+---
+## Continuous Integration
+### Continuous Integration tools
+ - Travis CI (Linux based)
+ - Appveyor (Windows based)
+ - Jenkins
+ - CicleCI
+ - Semaphore
+ - SnapCI
+ ### Appveyor
+  - The appveyor needs the "appveyor.yml" file to configure the parameters that are necessaries to run the CI integration.
