@@ -249,3 +249,30 @@ Very good way to debbug your code. Just try it.
  - SnapCI
  ### Appveyor
   - The appveyor needs the "appveyor.yml" file to configure the parameters that are necessaries to run the CI integration.
+
+# Http Calls
+## Http Call Aproaches
+ - Node
+  - http
+  - request
+ - Browser
+  - XMLHttpRequest
+  - JQuery
+  - Fetch
+ - Node & Browser
+  - isomorphic-fetch
+  - xhr
+  - SuperAgent
+  - Axios
+
+### Using Axios
+Example:
+'''
+axios({
+  url: 'http://your-api.com/user',
+  method: 'post',
+  headers: {
+    'Content-type': 'text/html; charset=UTF-8'},
+    data: text
+}).then(onSuccess, onError)
+'''
