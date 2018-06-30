@@ -90,7 +90,7 @@ After this, just use npm install to get all the necessary packages to this proje
 - 2) create src/index.html
 
 ### srcServer.js
-'''
+```
 var express = require('express');
 var path = require('path');
 var open = require('open');
@@ -109,7 +109,7 @@ app.listen(port, function(err) {
         open('http://localhost:' + port);
     }
 })
-'''
+```
 
 # Sharing work-in-progress (available players)
 - localtunnel;
@@ -164,13 +164,13 @@ app.listen(port, function(err) {
 
 ### Babel Transpiler
 -create a .babelrc file
-'''
+```
 {
     "presets": [
         "latest"
     ]
 }
-'''
+```
 
 ### Use ES6 modules transpiled by Babel
 
@@ -267,7 +267,7 @@ Very good way to debbug your code. Just try it.
 
 ### Using Axios
 Example:
-'''
+```
 axios({
   url: 'http://your-api.com/user',
   method: 'post',
@@ -275,4 +275,37 @@ axios({
     'Content-type': 'text/html; charset=UTF-8'},
     data: text
 }).then(onSuccess, onError)
-'''
+```
+
+## Centralize API Calls
+# 1 Spot
+- Configure all calls at the same place
+- Handle preloader logic
+- Single seam for mocking
+
+# Mocking HTTP
+
+- Nock
+- api-mock
+- JSON server
+- JSON schema faker
+- Browsersync
+- Express
+
+## Planning the Mock Http
+ - Declare our schema
+  - JSON Schema Faker
+   - https://github.com/json-schema-faker/json-schema-faker
+   - http://json-schema-faker.js.org/#gist/682f97a2e28e230b51810c55b92f4cdc)
+ - Generate Random Data:
+  - Faker.js (https://github.com/marak/Faker.js/)
+  - Chance.js (https://chancejs.com/)
+  - Randexp.js
+ - Serve Data via API
+  - JSON Server (https://github.com/typicode/json-server)
+## Mocker library
+ - JSON Schema (json-schema.org)
+## Creating the mock structure
+ - create the file mockDataSchema.js inside the buildScripts
+ - create the flie generateMockData.js inside the same folder
+ - create the file baseUrl.js
