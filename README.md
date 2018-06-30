@@ -317,7 +317,30 @@ export function deleteUser(id) {
 }
  ```
 
-# Minification
+# Production Build
+ - Create the "webpack.config.prod.js" file;
+ - Insert the pluggins you will need Uglify and Dedupe (remove duplicate file generate at the bundle), for example.
 
+## Create you build structure
+ - Create a new file at "buildScript", called build.js
+
+## Referencing Bundled Assets in HTML
+ - Hard coded: ``` <script scr="budlle.js"></script> ```
+ - Nodejs
+ - html-webpack-plugin
+
+# Error logging (this is a very important tool to consider)
+ - TrackJS (https://trackjs.com/)
+ - Sentry
+ - New Relic
+ - Raygun
+
+# Want inspiration?
+ - andrewfarmer.com/start-project (react starter project)
+ - Development environment
+ - Boilerplate
+ - Starter kit
+ - Starter project
+ - Seed
 
 Thanks Cory House!
