@@ -309,3 +309,15 @@ axios({
  - create the file mockDataSchema.js inside the buildScripts
  - create the flie generateMockData.js inside the same folder
  - create the file baseUrl.js
+## Delete a User Metod
+ - create a new method at the userApi.js file
+ ```
+export function deleteUser(id) {
+    return del(`users/${id}`);
+}
+ ```
+
+# Minification
+
+
+Thanks Cory House!
